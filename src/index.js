@@ -1,17 +1,18 @@
+  //dependencies are in package.json file and are code bundle
+  // builds make sure my code combined with the 3rd party code is something the browser can understand
+// imported from package.json file
 import React from 'react';
+//import reactDom objet from react dom library
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+import './index.css';
+//this is from App.js and appears as ./App because the extension can be ommited
+import App from './App';
+
+//jxs code is javascript + html
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>
-);
+    );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Todo from "./components/Todo";
+
+//special thing about this function is that ir returns jsx code...is a function and custom html element. This is a component and a component must return something that can be rendered in the browser
+//"state" is built into react and lets us change the state of an application
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My Todos</h1>
+      <Todo text="Learn React"/>
+      <Todo text="Master React"/>
+      <Todo text="Explore the full React Course"/>
+
+
+
+
     </div>
   );
 }
